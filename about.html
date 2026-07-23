@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f7fb;
+            color:#333;
+            line-height:1.6;
+        }
+
+        .hero{
+            background:linear-gradient(135deg,#2563eb,#1e40af);
+            color:white;
+            text-align:center;
+            padding:90px 20px;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin:auto;
+            font-size:18px;
+            opacity:.95;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+        }
+
+        section{
+            padding:70px 0;
+        }
+
+        .about{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:50px;
+            align-items:center;
+        }
+
+        .about img{
+            width:100%;
+            border-radius:15px;
+        }
+
+        .about h2{
+            margin-bottom:20px;
+            color:#1e40af;
+            font-size:34px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 10px 25px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card h3{
+            color:#2563eb;
+            margin-bottom:12px;
+        }
+
+        .stats{
+            background:#1e40af;
+            color:white;
+        }
+
+        .stats-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            text-align:center;
+            gap:20px;
+        }
+
+        .stat h2{
+            font-size:42px;
+        }
+
+        .team{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .member{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,0,0,.08);
+            text-align:center;
+        }
+
+        .member img{
+            width:100%;
+            height:280px;
+            object-fit:cover;
+        }
+
+        .member h3{
+            margin-top:20px;
+        }
+
+        .member p{
+            color:#666;
+            padding-bottom:25px;
+        }
+
+        footer{
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            .hero h1{
+                font-size:36px;
+            }
+
+            .about{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header class="hero">
+        <h1>About Us</h1>
+        <p>
+            We are passionate about creating innovative digital solutions that
+            help businesses grow, connect with customers, and achieve their goals.
+        </p>
+    </header>
+
+    <section>
+        <div class="container about">
+
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Our Team">
+
+            <div>
+                <h2>Who We Are</h2>
+
+                <p>
+                    Our company is dedicated to delivering high-quality web,
+                    mobile, and software solutions tailored to modern business
+                    needs. We believe in innovation, collaboration, and
+                    customer satisfaction.
+                </p>
+
+                <br>
+
+                <p>
+                    Since our beginning, we've helped startups, small
+                    businesses, and enterprises transform their ideas into
+                    successful digital products through cutting-edge
+                    technology and creative design.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container">
+
+            <h2 style="text-align:center;margin-bottom:40px;color:#1e40af;">
+                Our Values
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Innovation</h3>
+                    <p>
+                        We continuously embrace new technologies to build
+                        smarter and better solutions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Quality</h3>
+                    <p>
+                        Every project is delivered with attention to detail,
+                        performance, and reliability.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Customer First</h3>
+                    <p>
+                        Understanding our clients' needs is at the heart of
+                        everything we create.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat">
+                    <h2>150+</h2>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="stat">
+                    <h2>100+</h2>
+                    <p>Happy Clients</p>
+                </div>
+
+                <div class="stat">
+                    <h2>20+</h2>
+                    <p>Team Members</p>
+                </div>
+
+                <div class="stat">
+                    <h2>5+</h2>
+                    <p>Years Experience</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="container">
+
+            <h2 style="text-align:center;margin-bottom:40px;color:#1e40af;">
+                Meet Our Team
+            </h2>
+
+            <div class="team">
+
+                <div class="member">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600" alt="">
+                    <h3>John Smith</h3>
+                    <p>Founder & CEO</p>
+                </div>
+
+                <div class="member">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" alt="">
+                    <h3>Sarah Johnson</h3>
+                    <p>Creative Director</p>
+                </div>
+
+                <div class="member">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="">
+                    <h3>Michael Brown</h3>
+                    <p>Lead Developer</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Company Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
